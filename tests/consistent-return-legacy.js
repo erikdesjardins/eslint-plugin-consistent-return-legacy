@@ -27,8 +27,8 @@ ruleTester.run("consistent-return-legacy", rule, {
         "f(function() { if (true) return true; else return false; })",
         "function foo() { function bar() { return true; } return; }",
         "function foo() { function bar() { return; } return false; }",
-        { code: "var x = () => {  return {}; };", ecmaFeatures: { arrowFunctions: true } },
-        { code: "if (true) { return 1; } return 0;", ecmaFeatures: { globalReturn: true } }
+        { code: "var x = () => {  return {}; };", parserOptions: { ecmaVersion: 6 } },
+        { code: "if (true) { return 1; } return 0;", parserOptions: { ecmaFeatures: { globalReturn: true } } }
     ],
 
     invalid: [
@@ -43,7 +43,7 @@ ruleTester.run("consistent-return-legacy", rule, {
         },
         {
             code: "var foo = () => { if (true) return true; else return; }",
-            ecmaFeatures: { arrowFunctions: true },
+            parserOptions: { ecmaVersion: 6 },
             errors: [
                 {
                     message: "Expected a return value.",
@@ -80,7 +80,7 @@ ruleTester.run("consistent-return-legacy", rule, {
         },
         {
             code: "f(a => { if (true) return; else return false; })",
-            ecmaFeatures: { arrowFunctions: true },
+            parserOptions: { ecmaVersion: 6 },
             errors: [
                 {
                     message: "Expected no return value.",
@@ -90,7 +90,7 @@ ruleTester.run("consistent-return-legacy", rule, {
         },
         {
             code: "if (true) { return 1; } return;",
-            ecmaFeatures: { globalReturn: true },
+            parserOptions: { ecmaFeatures: { globalReturn: true } },
             errors: [
                 {
                     message: "Expected a return value.",
