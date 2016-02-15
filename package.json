@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-consistent-return-legacy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The consistent-return rule from ESLint 1.x.",
   "keywords": [
     "eslint",
