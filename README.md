@@ -29,3 +29,18 @@ function() {
 ```
 
 In some code the new behavior may produce many false negatives, e.g. when returning `false` in jQuery event handlers.
+
+## Usage
+
+`npm i --save-dev eslint-plugin-consistent-return-legacy`
+
+```json
+{
+	"plugins": [
+		"consistent-return-legacy"
+	],
+	"rules": {
+		"consistent-return-legacy/consistent-return-legacy": 2
+	}
+}
+```
