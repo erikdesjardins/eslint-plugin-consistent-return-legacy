@@ -40,7 +40,7 @@ In some code the new behavior may produce many false negatives, e.g. when return
 		"consistent-return-legacy"
 	],
 	"rules": {
-		"consistent-return-legacy/consistent-return-legacy": 2
+		"consistent-return-legacy/consistent-return": 2
 	}
 }
 ```

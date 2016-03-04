@@ -7,6 +7,6 @@
 
 module.exports = {
 	rules: {
-		'consistent-return-legacy': require('./rules/consistent-return-legacy')
+		'consistent-return': require('./rules/consistent-return')
 	}
 };
