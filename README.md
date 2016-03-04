@@ -8,9 +8,9 @@ For example, this would be legal:
 
 ```js
 function() {
-	if (foo) return foo;
+  if (foo) return foo;
 
-	if (bar) return bar;
+  if (bar) return bar;
 }
 ```
 
@@ -20,11 +20,11 @@ So the first example would not be legal; you'd need to do this:
 
 ```js
 function() {
-	if (foo) return foo;
+  if (foo) return foo;
 
-	if (bar) return bar;
-	
-	return baz;
+  if (bar) return bar;
+  
+  return baz;
 }
 ```
 
@@ -36,11 +36,11 @@ In some code the new behavior may produce many false negatives, e.g. when return
 
 ```json
 {
-	"plugins": [
-		"consistent-return-legacy"
-	],
-	"rules": {
-		"consistent-return-legacy/consistent-return-legacy": 2
-	}
+  "plugins": [
+    "consistent-return-legacy"
+  ],
+  "rules": {
+    "consistent-return-legacy/consistent-return": 2
+  }
 }
 ```

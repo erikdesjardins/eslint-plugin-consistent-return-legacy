@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
-var rule = require('../rules/consistent-return-legacy');
+var rule = require('../rules/consistent-return');
 var RuleTester = require("eslint").RuleTester;
 
 //------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ var RuleTester = require("eslint").RuleTester;
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-ruleTester.run("consistent-return-legacy", rule, {
+ruleTester.run("consistent-return", rule, {
 
     valid: [
         "function foo() { return; }",
