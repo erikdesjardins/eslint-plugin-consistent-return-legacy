@@ -1,4 +1,4 @@
-# eslint-plugin-consistent-return-legacy [![Build Status](https://travis-ci.org/erikdesjardins/eslint-plugin-consistent-return-legacy.svg?branch=master)](https://travis-ci.org/erikdesjardins/eslint-plugin-consistent-return-legacy)
+# eslint-plugin-consistent-return-legacy
 
 The consistent-return rule from ESLint 1.x.
 
